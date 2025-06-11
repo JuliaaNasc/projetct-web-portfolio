@@ -31,17 +31,10 @@ const Portfolio = () => {
   const experiences = [
     {
       period: 'Atual',
-      role: 'Analista de Governança de TI',
+      role: 'Estagiária em Desenvolvimento Mobile',
       company: 'G4Flex',
-      description: 'Na G4Flex, atuei na área de Governança de TI, realizando o acompanhamento de projetos e a elaboração de documentações técnicas, contribuindo para a organização, padronização e eficiência dos processos da área de tecnologia.',
-      highlights: ['Governança de TI', 'Processos', 'Compliance']
-    },
-    {
-      period: '4 meses',
-      role: 'Analista Comercial',
-      company: 'G4Flex',
-      description: 'Tive a oportunidade de integrar o time comercial da G4FLEX por alguns meses, após receber um convite do CEO da empresa. Durante esse período, atuei na atualização de leads na base de dados, contribuindo para uma prospecção mais eficiente e estratégica.',
-      highlights: ['Vendas', 'Marketing', 'Eventos']
+      description: 'Início da trajetória na empresa focando em desenvolvimento mobile com Flutter e Dart.',
+      highlights: ['Flutter', 'Dart', 'Desenvolvimento Mobile']
     },
     {
       period: 'Período',
@@ -51,11 +44,18 @@ const Portfolio = () => {
       highlights: ['React.js', 'Node.js', 'JavaScript']
     },
     {
-      period: 'Atual',
-      role: 'Estagiária em Desenvolvimento Mobile',
+      period: '4 meses',
+      role: 'Analista Comercial',
       company: 'G4Flex',
-      description: 'Início da trajetória na empresa focando em desenvolvimento mobile com Flutter e Dart.',
-      highlights: ['Flutter', 'Dart', 'Desenvolvimento Mobile']
+      description: 'Tive a oportunidade de integrar o time comercial da G4FLEX por alguns meses, após receber um convite do CEO da empresa. Durante esse período, atuei na atualização de leads na base de dados, contribuindo para uma prospecção mais eficiente e estratégica.',
+      highlights: ['Vendas', 'Marketing', 'Eventos']
+    },
+    {
+      period: 'Atual',
+      role: 'Analista de Governança de TI',
+      company: 'G4Flex',
+      description: 'Na G4Flex, atuei na área de Governança de TI, realizando o acompanhamento de projetos e a elaboração de documentações técnicas, contribuindo para a organização, padronização e eficiência dos processos da área de tecnologia.',
+      highlights: ['Governança de TI', 'Processos', 'Compliance']
     }
   ];
 
