@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -65,29 +64,36 @@ const Portfolio = () => {
       title: 'Manual de Uso da Plataforma G4Flex',
       category: 'Liderança & Documentação',
       description: 'Liderança completa do projeto de criação do manual de uso da plataforma da empresa, incluindo análise de requisitos, estruturação e desenvolvimento.',
-      tech: ['Documentação Técnica', 'Análise de Requisitos', 'Liderança'],
+      tech: ['Docusaurus'],
       type: 'documentation'
     },
     {
-      title: 'Aplicativo Mobile G4Flex',
+      title: 'Instituto Doando que se Recebe',
       category: 'Desenvolvimento Mobile',
-      description: 'Desenvolvimento e manutenção do aplicativo mobile da empresa utilizando React Native e tecnologias modernas.',
-      tech: ['React Native', 'TypeScript', 'Expo'],
+      description: 'O aplicativo "Doando que se Recebe" foi desenvolvido como parte de um projeto social durante meu curso técnico no ensino médio. O app foi criado para uma instituição beneficente, com o objetivo de aproximar a comunidade da causa, facilitando o acesso a informações e permitindo que mais pessoas conheçam e apoiem o trabalho realizado pela organização.',
+      tech: ['Flutter', 'Dart'],
       type: 'mobile'
     },
     {
-      title: 'Plataforma Web G4Flex',
-      category: 'Desenvolvimento Web',
-      description: 'Contribuição no desenvolvimento da plataforma web da empresa com foco em interface de usuário e experiência.',
-      tech: ['React', 'TypeScript', 'Tailwind CSS'],
+      title: 'Amor Por Sabor',
+      category: 'Desenvolvimento Mobile',
+      description: 'O aplicativo da "Amor Por Sabor" foi desenvolvido com o objetivo de divulgar a doceria, permitindo que os clientes conheçam melhor os produtos oferecidos e realizem seus pedidos de forma prática e rápida, diretamente pelo app.',
+      tech: ['Flutter', 'Dart'],
+      type: 'mobile'
+    },
+    {
+      title: 'Jogo "Sim" & "Não"',
+      category: 'Desenvolvimento Desktop',
+      description: 'Este projeto desenvolve uma interface interativa em Python, utilizando uma biblioteca gráfica, com o objetivo de proporcionar uma experiência divertida para o usuário. Na tela, ao tentar clicar no botão "Não", ele se move rapidamente, fugindo do cursor do mouse. Isso torna a interação descontraída e leva, de forma bem-humorada, a pessoa a clicar no botão "Sim".',
+      tech: ['Python'],
       type: 'web'
     },
     {
-      title: 'Documentações Técnicas Internas',
-      category: 'Documentação',
-      description: 'Produção de diversas documentações técnicas para projetos internos, garantindo qualidade e padronização.',
-      tech: ['Documentação', 'Processos', 'Análise'],
-      type: 'documentation'
+      title: 'Listando Tarefas',
+      category: 'Desenvolvimento Web',
+      description: 'Desenvolvi um site em React.js com foco em lista de tarefas, onde o usuário pode criar, categorizar, concluir, excluir e ordenar tarefas (por ordem alfabética ou decrescente). O projeto também conta com filtros por status (todas, concluídas e pendentes) e barra de pesquisa. Foi meu primeiro contato com o React.js, e pude experimentar sua rapidez, flexibilidade e facilidade de uso.',
+      tech: ['React.js'],
+      type: 'web'
     }
   ];
 
@@ -199,8 +205,8 @@ const Portfolio = () => {
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-text">Sobre Mim</h2>
-            <p className="text-lg text-portfolio-gray-600 max-w-2xl mx-auto">
-              Estudante de Redes de Computadores com experiência prática em desenvolvimento e governança de TI
+            <p className="text-lg text-portfolio-gray-600 max-w-4xl mx-auto">
+              Atuo como desenvolvedora mobile e web há mais de 2 anos, sempre com foco em aprendizado contínuo e em criar soluções que unam funcionalidade e boa experiência de uso. Tenho uma mente criativa, curiosa e estou sempre aberta a novos desafios e oportunidades que me permitam crescer pessoal e profissionalmente.
             </p>
           </div>
           
@@ -365,7 +371,7 @@ const Portfolio = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-text">Projetos em Destaque</h2>
             <p className="text-lg text-portfolio-gray-600">
-              Principais projetos desenvolvidos e liderados na G4Flex
+              Explore meu portfólio e descubra os projetos que mostram minha paixão por tecnologia e desenvolvimento.
             </p>
           </div>
 
@@ -380,7 +386,6 @@ const Portfolio = () => {
                       {project.type === 'documentation' && <FileText className="h-6 w-6 text-portfolio-blue mr-3" />}
                       <Badge variant="outline">{project.category}</Badge>
                     </div>
-                    <ExternalLink className="h-5 w-5 text-portfolio-gray-400 group-hover:text-portfolio-blue transition-colors" />
                   </div>
                   
                   <h3 className="text-xl font-semibold mb-3 text-portfolio-gray-900">{project.title}</h3>
@@ -426,15 +431,15 @@ const Portfolio = () => {
                   <div className="space-y-4">
                     <div className="flex items-center">
                       <Mail className="h-5 w-5 text-portfolio-blue mr-4" />
-                      <span>seu.email@exemplo.com</span>
+                      <span>julia.nascimento.dev@gmail.com</span>
                     </div>
                     <div className="flex items-center">
                       <Phone className="h-5 w-5 text-portfolio-blue mr-4" />
-                      <span>(11) 99999-9999</span>
+                      <span>+ 55 (85) 9 8818 6503</span>
                     </div>
                     <div className="flex items-center">
                       <MapPin className="h-5 w-5 text-portfolio-blue mr-4" />
-                      <span>São Paulo, SP</span>
+                      <span>Fortaleza, Ceará</span>
                     </div>
                   </div>
                 </div>
@@ -442,13 +447,28 @@ const Portfolio = () => {
                 <div>
                   <h3 className="text-xl font-semibold mb-4">Conecte-se Comigo</h3>
                   <div className="flex space-x-4">
-                    <Button variant="outline" size="icon" className="border-white text-white hover:bg-white hover:text-portfolio-slate">
+                    <Button 
+                      variant="outline" 
+                      size="icon" 
+                      className="border-white text-white hover:bg-white hover:text-portfolio-slate"
+                      onClick={() => window.open('https://www.linkedin.com/in/juliacostadonascimento/', '_blank')}
+                    >
                       <Linkedin className="h-5 w-5" />
                     </Button>
-                    <Button variant="outline" size="icon" className="border-white text-white hover:bg-white hover:text-portfolio-slate">
+                    <Button 
+                      variant="outline" 
+                      size="icon" 
+                      className="border-white text-white hover:bg-white hover:text-portfolio-slate"
+                      onClick={() => window.open('https://github.com/JuliaaNasc', '_blank')}
+                    >
                       <Github className="h-5 w-5" />
                     </Button>
-                    <Button variant="outline" size="icon" className="border-white text-white hover:bg-white hover:text-portfolio-slate">
+                    <Button 
+                      variant="outline" 
+                      size="icon" 
+                      className="border-white text-white hover:bg-white hover:text-portfolio-slate"
+                      onClick={() => window.open('mailto:julia.nascimento.dev@gmail.com', '_blank')}
+                    >
                       <Mail className="h-5 w-5" />
                     </Button>
                   </div>
@@ -457,6 +477,7 @@ const Portfolio = () => {
                 <Button 
                   size="lg" 
                   className="bg-portfolio-blue hover:bg-portfolio-blue-dark text-white"
+                  onClick={() => window.open('https://docs.google.com/document/d/12sVqpX58BjtqWA3Jk1Qv8L_rEIdY3-9Kcbmbvb8aHeM/edit?usp=sharing', '_blank')}
                 >
                   <Download className="mr-2 h-4 w-4" />
                   Baixar Currículo
