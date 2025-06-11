@@ -25,7 +25,7 @@ const Portfolio = () => {
     mobile: ['Flutter', 'Dart'],
     web: ['React.js', 'Node.js', 'HTML', 'CSS', 'Docusaurus'],
     documentation: ['Documentação Técnica', 'Manuais de Usuário', 'Análise de Requisitos', 'Processos'],
-    tools: ['Git', 'GitHub', 'VS Code', 'Figma', 'Jira', 'Confluence']
+    tools: ['Git', 'GitHub', 'GitLab', 'VS Code', 'Android Studio', 'Figma', 'ClickUp', 'Excel']
   };
 
   const experiences = [
@@ -33,29 +33,29 @@ const Portfolio = () => {
       period: 'Atual',
       role: 'Analista de Governança de TI',
       company: 'G4Flex',
-      description: 'Responsável pela governança de TI, processos e documentação técnica.',
+      description: 'Na G4Flex, atuei na área de Governança de TI, realizando o acompanhamento de projetos e a elaboração de documentações técnicas, contribuindo para a organização, padronização e eficiência dos processos da área de tecnologia.',
       highlights: ['Governança de TI', 'Processos', 'Compliance']
     },
     {
       period: '4 meses',
       role: 'Analista Comercial',
       company: 'G4Flex',
-      description: 'Atuação no time comercial com colaboração em marketing, design e eventos internos.',
+      description: 'Tive a oportunidade de integrar o time comercial da G4FLEX por alguns meses, após receber um convite do CEO da empresa. Durante esse período, atuei na atualização de leads na base de dados, contribuindo para uma prospecção mais eficiente e estratégica.',
       highlights: ['Vendas', 'Marketing', 'Eventos']
     },
     {
-      period: 'Ago 2023 - 2024',
-      role: 'Desenvolvedora Mobile & Web',
+      period: 'Período',
+      role: 'Desenvolvimento Web',
       company: 'G4Flex',
-      description: 'Desenvolvimento mobile e web, liderança de projeto de manual da plataforma.',
-      highlights: ['React Native', 'React', 'Liderança de Projeto']
+      description: 'Foi desenvolvido para proporcionar uma experiência abrangente e eficiente na utilização do sistema de comunicação unificada. O FlexUC é uma solução robusta que integra diversas funcionalidades essenciais para a gestão de atendimento ao cliente, monitoramento de atividades e análise de desempenho, tudo em uma plataforma intuitiva e fácil de usar. Com Node.js, React.js, HTML, CSS, JavaScript e Docusaurus.',
+      highlights: ['React.js', 'Node.js', 'JavaScript']
     },
     {
-      period: 'Ago 2023',
+      period: 'Atual',
       role: 'Estagiária em Desenvolvimento Mobile',
       company: 'G4Flex',
-      description: 'Início da trajetória na empresa focando em desenvolvimento mobile.',
-      highlights: ['React Native', 'Aprendizado', 'Desenvolvimento Mobile']
+      description: 'Início da trajetória na empresa focando em desenvolvimento mobile com Flutter e Dart.',
+      highlights: ['Flutter', 'Dart', 'Desenvolvimento Mobile']
     }
   ];
 
@@ -479,3 +479,5 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
+}
