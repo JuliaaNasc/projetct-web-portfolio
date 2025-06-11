@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -23,8 +22,8 @@ const Portfolio = () => {
   const [activeSection, setActiveSection] = useState('home');
 
   const skills = {
-    mobile: ['React Native', 'Expo', 'TypeScript', 'JavaScript', 'Android Studio'],
-    web: ['React', 'TypeScript', 'Tailwind CSS', 'HTML5', 'CSS3', 'Vite'],
+    mobile: ['Flutter', 'Dart'],
+    web: ['React.js', 'Node.js', 'HTML', 'CSS', 'Docusaurus'],
     documentation: ['Documentação Técnica', 'Manuais de Usuário', 'Análise de Requisitos', 'Processos'],
     tools: ['Git', 'GitHub', 'VS Code', 'Figma', 'Jira', 'Confluence']
   };
@@ -153,7 +152,7 @@ const Portfolio = () => {
                 <span className="block text-portfolio-gray-200">& Analista de TI</span>
               </h1>
               <p className="text-xl text-portfolio-gray-200 mb-8 leading-relaxed">
-                Especialista em desenvolvimento mobile e web, com experiência em governança de TI e documentação técnica na G4Flex.
+                Acredito que tecnologia é uma ponte — entre ideias e soluções, entre pessoas e possibilidades. Meu propósito como pessoa é usar essa ponte para criar experiências que façam sentido, que melhorem a vida das pessoas e que tragam impacto real, mesmo que em pequenos detalhes.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
@@ -207,7 +206,7 @@ const Portfolio = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
               <img
-                src="/lovable-uploads/a267f5b3-6c2d-424a-ad17-df42089619f0.png"
+                src="/lovable-uploads/e63109c0-e7ed-4930-810e-f5cee8531194.png"
                 alt="Foto Profissional 2"
                 className="w-full max-w-lg mx-auto rounded-2xl shadow-lg"
               />
